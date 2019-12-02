@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
         <!-- Custom styles for this template -->
+        <link href="../css/login-form.css" rel="stylesheet">
         <link href="../css/one-page-wonder.css" rel="stylesheet">
     </head>
     <body>
@@ -33,7 +34,30 @@
             </div>
             </div>
         </nav>
+
+        <div class="login-page">
+            <div class="form">
+                <form class="register-form">
+                    <input type="text" placeholder="name"/>
+                    <input type="password" placeholder="password"/>
+                    <input type="text" placeholder="email address"/>
+                    <input type="button" class="btn-primary" value="Create" onClick="window.location.href='profile.html';"></input>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form>
+                <form class="login-form">
+                    <input type="text" placeholder="username"/>
+                    <input type="password" placeholder="password"/>
+                    <input type="button" class="btn-primary" value="Login" onClick="window.location.href='profile.html';"></input>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                </form>
+            </div>
+        </div>
         
-        <script src="" async defer></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script>
+           $('.message a').click(function(){
+                $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+            });
+        </script>
     </body>
 </html>
