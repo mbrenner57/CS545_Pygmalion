@@ -1,0 +1,17 @@
+.gameboard {
+    position: absolute;
+    top: 9rem;
+    left: 18rem;
+    z-index: 0;
+}
+
+.button_1 {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 51rem;
+    width: 80px;
+    height: 30px;
+    left: 19rem;
+    z-index: 1;
+    /* display: none; */
+}
