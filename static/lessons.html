@@ -42,13 +42,38 @@
         
         <div class="container lesson-cont">
             <div class="title lesson-title">
-                <strong> ~ Hello World ~ </strong>
+                <strong>Lesson 1: Hello World</strong>
             </div>
             <div class = "lesson-content">
                 <p><br>Python is an amazing, powerful language that can be used for programs as simple as printing "Hello World" to machine learning, web services, and beyonD! [Businesses] use Python for [purposes]!</p>
+
             </div>
+            <div class = "lesson-input">
+                <form>
+                    <p>Input Code Here!</p>
+                    <input type="text" id="code">
+                    <br><br>
+                    <input type="button" value="Check Your Code!" onClick="checkCode">
+                </form>
+                <p id="right">U got it!</p>
+                <p id="wrong">Boy ur ded wrong</p> 
+            </div>
+            
+        </div>
 
 
         <script src="" async defer></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script>
+            function checkCode() {
+                var correct = "print(\"Hello World!\")";
+                if ($("#code").value == correct){
+                    $("#right").toggle();
+                }
+                else{
+                    $("#wrong").toggle();
+                }
+            }
+        </script>
     </body>
 </html>

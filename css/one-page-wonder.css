@@ -154,11 +154,35 @@ header.masthead .masthead-content .masthead-subheading {
 
 .lesson-title {
   display: flex;
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
   position: absolute;
   top: 6rem;
 }
 
 .title {
   font-size: 40px;
+}
+
+.lesson-content{
+  display: flex;
+  /*border: 2px solid orange;*/
+  position: absolute;
+  top: 10rem;
+  max-width: 50%
+}
+
+.lesson-input{
+  display: flex;
+  /*border: 2px solid orange;*/
+  position: absolute;
+  top: 20rem;
+  max-width: 50%
+}
+
+#right{
+  display:none;
+}
+
+#wrong{
+  display:none;
 }
